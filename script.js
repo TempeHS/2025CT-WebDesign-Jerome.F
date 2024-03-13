@@ -1,17 +1,20 @@
 let enterName = prompt("Welcome! Please Enter Your Name");
 let playerGuess;
-let playerFeedback = "test";
+//let computerGuesss = randomNum
+let computerGuess = randomNum();
+let playerFeedback 
 loadDIV ();
 
+function randomNum() {
+return Math.floor(Math.random() * (10 - 1 + 1) + 1)
+}
 
-
-funtion loadDIV () {
-    document.getElementById("ScriptThisDIV").innerHTML = "<H1>Hello " + enterName + "</H1><H2>Jess ar nombar beteen wan and wan"
-    2/*+-document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV") 
-    document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV").innerHTML + playerFeedback
-
+function loadDIV () {
+document.getElementById("ScriptThisDIV").innerHTML = "<H1>Hello " + enterName + "</H1><H2>Jess ar nombar beteen wan and wan"
+document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV") 
+document.getElementById("ScriptThisDIV").innerHTML = document.getElementById("ScriptThisDIV").innerHTML + playerFeedback
 }
 
 function enterNumber () {
-    playerGuess = promppt ("anta ar nombar")
+playerGuess = prompt ("anta ar nombar")
 }
